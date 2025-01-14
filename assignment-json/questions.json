@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "question": "Which country has the most islands?",
+        "options": ["Sweden", "Russia", "United States"],
+        "answer": "Sweden"
+    },
+    {
+        "id": 2,
+        "question": "What is the name of the smallest country?",
+        "options": ["Canada", "Mali", "Vatican"],
+        "answer": "Vatican"
+    },
+    {
+        "id": 3,
+        "question": "What is the capital of Canada?",
+        "options": ["Winnipeg", "Ottawa", "Toronto"],
+        "answer": "Ottawa"
+    },
+    {
+        "id": 4,
+        "question": "Which year did the United States drop the nuclear bomb on Japan?",
+        "options": ["1943", "1945", "1946"],
+        "answer": "1945"
+    },
+    {
+        "id": 5,
+        "question": "Who famously crossed the Alps with elephants on the way to war with the Romans?",
+        "options": ["Alexander", "Cassius", "Hannibal"],
+        "answer": "Hannibal"
+    },
+    {
+        "id": 6,
+        "question": "What year was the United Nations established?",
+        "options": ["1954", "1945", "1944"],
+        "answer": "1945"
+    },
+    {
+        "id": 7,
+        "question": "In what decade was the internet created?",
+        "options": ["1960", "1950", "1970"],
+        "answer": "1960"
+    },
+    {
+        "id": 8,
+        "question": "Which currency is currently used as reserve currency?",
+        "options": ["SKR", "EURO", "USD"],
+        "answer": "USD"
+    },
+    {
+        "id": 9,
+        "question": "What is the only mammal capable of true flight? ",
+        "options": ["Bat", "Squirrel", "Hawk"],
+        "answer": "Bat"
+    },
+    {
+        "id": 10,
+        "question": "What animal has the longest tongue?",
+        "options": ["Donkey", "Giraffe", "Gecko"],
+        "answer": "Giraffe"
+    }
+]
+  
