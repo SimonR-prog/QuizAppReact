@@ -22,8 +22,8 @@ JSON for storing the questions.
 4. Add the ability to replay the quiz and/or show the correct answer after each question.
 5. Responsive design so that the web app works on any platform.
 
-
-
+### Small initial thoughts:
+I am going to try adding a random number generator to pick the questions at random. Will let it generate 5 numbers, store them in a list and then iterate through the ids to show the questions.
 
 
 # Sources:
