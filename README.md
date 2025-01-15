@@ -46,8 +46,10 @@ Made a function named RnGenerator which creates an empty array. Uses a while loo
 
 # Sources:
 Most of the questions are from: https://www.mentimeter.com/blog/meetings/quiz-questions
+
 Learning to generate random numbers: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/generate-random-whole-numbers-within-a-range
-Testing my JS code: https://pythontutor.com/render.html#mode=display
+
+Used for testing some of my JS code: https://pythontutor.com/render.html#mode=display
 
 
 
