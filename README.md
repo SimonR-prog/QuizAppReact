@@ -23,8 +23,16 @@ JSON for storing the questions.
 5. Responsive design so that the web app works on any platform.
 
 ### Small initial thoughts:
-I am going to try adding a random number generator to pick the questions at random. Will let it generate 5 numbers, store them in a list and then iterate through the ids to show the questions.
+I am going to try adding a random number generator to pick the questions at random. Will let it generate 5 numbers, store them in an array and then iterate through the ids to show the questions.
 
+#### Possible steps:
+Have a "start quiz" button which creates an empty array and generate five numbers between 1-10 and add them to the array aslong as the number isn't already in the array.
+When the array contains 5 elements, return the array.
+
+Have a while loop that iterates through the array and shows the question and answers depending on which id it has. If the button which the user clicks contains the same answer as the correct answer, then increase some point counter variable and move to the next question.
+When the while loophas ran five times, end the loop.
+
+Maybe have one var for wrong answers and one for correct answers. And when the total of them together equal five, end the loop and call a function which shows the score and a message depeding on which var is higher.
 
 # Sources:
 Most of the questions are from: https://www.mentimeter.com/blog/meetings/quiz-questions
