@@ -52,5 +52,4 @@ Testing my JS code: https://pythontutor.com/render.html#mode=display
 
 
 # Contact: 
-LinkedIn: 
-
+LinkedIn: https://www.linkedin.com/in/simon-roll%C3%A9n-250a5232a/
