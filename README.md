@@ -30,9 +30,27 @@ Have a "start quiz" button which creates an empty array and generate five number
 When the array contains 5 elements, return the array.
 
 Have a while loop that iterates through the array and shows the question and answers depending on which id it has. If the button which the user clicks contains the same answer as the correct answer, then increase some point counter variable and move to the next question.
-When the while loophas ran five times, end the loop.
+When the while loop has ran five times, end the loop.
 
 Maybe have one var for wrong answers and one for correct answers. And when the total of them together equal five, end the loop and call a function which shows the score and a message depeding on which var is higher.
 
+# Parts of the code:
+
+### RNG:
+Added a link in the sources for where I learned to generate whole numbers within a range and the site I used to test the code I wrote to make sure it worked.
+
+<img src="https://github.com/user-attachments/assets/f05778f6-f011-4060-a620-575034a65459" alt="Image of code." height="300">
+
+Made a function named RnGenerator which creates an empty array. Uses a while loop that iterates until the array contains five elements. It has an if statement which only runs if the number isn't already in the array at which point it adds the new number. When the array is full, it ends the while loop and returns the array.
+
+
 # Sources:
 Most of the questions are from: https://www.mentimeter.com/blog/meetings/quiz-questions
+Learning to generate random numbers: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/generate-random-whole-numbers-within-a-range
+Testing my JS code: https://pythontutor.com/render.html#mode=display
+
+
+
+# Contact: 
+LinkedIn: 
+
