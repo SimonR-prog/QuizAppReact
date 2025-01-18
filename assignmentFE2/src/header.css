@@ -1,6 +1,15 @@
-.header{
+@import './colors.css';
 
+.header{
+    background-color: var(--second-bg-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header-h1{
-    
+    color: var(--text-color);
 }
