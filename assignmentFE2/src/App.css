@@ -1,19 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import './colors.css';
+
+body{
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-card {
+  background-color: var(--second-bg-color);
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 8px;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow-color);
+  border: var(--border-color);
 }
-h1{}
-
-.card {
-  padding: 2em;
+.btn{
+  border-radius: 12px;
+  box-shadow: var(--box-shadow-color);
+  border: var(--border-color);
 }
-
-button{}
-
-button:hover{}
-
-p{}
-
-.option{}
+.start-btn{
+  background-color: var(--sc-six);
+  font-weight: 700;
+  color: var(--text-color);
+}

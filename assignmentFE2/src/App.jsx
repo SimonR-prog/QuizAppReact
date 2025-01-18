@@ -4,7 +4,8 @@ function App() {
   return (
     <>
       <div className="start-card">
-        <button id="start" className="start-btn btn">Click to start the quiz</button>
+        <h3>Click to start the game.</h3>
+        <button id="start" className="start-btn btn">Start</button>
       </div>
     </>
   )
