@@ -1,0 +1,14 @@
+:root{
+    --bg-color: #5D747C;
+    --second-bg-color: #8CB4BA;
+    --text-color: #151515;
+    --main-color: ;
+    
+    /* Special button possible colors. */
+    --sc-one: #FFA500;
+    --sc-two: #FFC107;
+    --sc-three: #FF6F61;
+    --sc-four: #FFCCB6;
+    --sc-five: #DAA520;
+    --sc-six: #FF4500;
+}
