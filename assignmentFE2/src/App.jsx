@@ -1,13 +1,24 @@
 import './App.css'
+import { useState } from 'react';
+import QuizGame from './quiz';
 
 function App() {
+  const [startQuiz, setStartQuiz] = useState(false);
+  const quiz = () => {setStartQuiz(true);};
+
   return (
     <>
-      <div className="start-card">
-        <h3>Click to start the game.</h3>
-        <button id="start" className="start-btn btn">Start</button>
-      </div>
+      {!startQuiz ? (
+        <>
+          <div className="start-card">
+            <h3>Click to start the game.</h3>
+            <button onClick={quiz} id="start" className="start-btn btn">Start</button>
+          </div>
+        </>
+      ) : (
+      <QuizGame />
+      )}
     </>
-  )
+  );
 }
 export default App
