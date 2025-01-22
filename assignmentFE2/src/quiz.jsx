@@ -1,21 +1,24 @@
 //Import the array-done, fetch the data, while loop for game and then divert to result screen. 
 
+import GetData from './questions';
 import './quiz.css'
 import RnGenerator from "./Rng";
 import { useState } from "react";
 
 //Need a function that will compare the correct answer with the answer of the users click.
 //If answer === click -> increase wins etc. Can return a true/false and use an if return true ++ on wins if false ++ on loss..
-function CorrectAnswer(){
-    const correctAnswer = ;
 
-    if (correctAnswer === ){
-        setCorrect
-    }
-}
+// function CorrectAnswer(){
+//     const correctAnswer = ;
+
+//     if (correctAnswer === ){
+//         setCorrect
+//     }
+// }
 
 function QuizGame(){
     const arrayOfIds = RnGenerator();
+    const data = GetData();
     var [correct, setCorrect] = useState(0);
     var [wrong, setWrong] = useState(0);
     return(
@@ -24,8 +27,8 @@ function QuizGame(){
                 <h2>Question</h2>
                 <section className="result">
                     <ul className="result-list">
-                        <li><p>Correct answers: {correct}</p></li>
-                        <li><p>Wrong answers: {wrong}</p></li>
+                        <li><p>Correct answers: {correct} </p></li>
+                        <li><p>Wrong answers: {wrong} </p></li>
                     </ul>
                 </section>
                 <section className="answers">
