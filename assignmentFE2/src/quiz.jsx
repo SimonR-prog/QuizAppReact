@@ -1,5 +1,3 @@
-//Import the array-done, fetch the data, while loop for game and then divert to result screen. 
-
 import GetData from './questions';
 import './quiz.css'
 import RnGenerator from "./Rng";
@@ -18,9 +16,13 @@ import { useState } from "react";
 
 function QuizGame(){
     const arrayOfIds = RnGenerator();
+
     const data = GetData();
+    console.log(data);
+
     var [correct, setCorrect] = useState(0);
     var [wrong, setWrong] = useState(0);
+
     return(
         <>
             <div className="quiz-card">
