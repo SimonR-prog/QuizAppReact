@@ -1,15 +1,16 @@
-const questionJSON = '/questions.json'
-function GetData() {
-    fetch(questionJSON)
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error("Can't access the JSON-file.")
-            }
-            return response.json();
-        })
-        .then((data) => 
-            console.log(data))
-        .catch((error) => 
-            console.error("Can't access the data.", error))
+const questionJSON = '/questions.json';
+
+async function GetData() {
+    try {
+        const response = await fetch(questionJSON);
+        if (!response.ok) {
+            throw new Error("Can't access the JSON-file.")
+        }
+        return await response.json();
+    }
+    catch (error) {
+        console.error("Can't access the data.", error)
+        return [];
+    }
 }
 export default GetData
