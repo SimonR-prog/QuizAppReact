@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import QuizGame from "./quiz";
+import './result.css'
 
 function ResultScreen({wrong, correct}) {
     const [startQuiz, setStartQuiz] = useState(false);
