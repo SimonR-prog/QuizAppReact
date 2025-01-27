@@ -1,4 +1,4 @@
-import './App.css'
+import './Stylings/App.css'
 import { useState } from 'react';
 import QuizGame from './quiz';
 
