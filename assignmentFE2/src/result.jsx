@@ -1,15 +1,38 @@
+import { useEffect, useState } from "react"
+import QuizGame from "./quiz";
 import './result.css'
-//results page that will check if user won or not, display message and ask if the person wants to go again.
-
-
-
 
 function ResultScreen({wrong, correct}) {
-    return(
+    const [startQuiz, setStartQuiz] = useState(false);
+    function quiz(){ setStartQuiz(true);};
+    const [result, setResult] = useState("");
+
+    useEffect(() => {
+        if (wrong < correct) {
+            setResult("Winner!");
+        }
+        else {
+            setResult("Loser..");
+        }
+    }, [wrong, correct])
+    
+
+    return (
         <>
-            <h1>Elon musk is a nazi.</h1>
+            {startQuiz ? (
+                <>
+                    <QuizGame />
+                </>
+            ) : (   
+                <>
+                    <section className="result-card">
+                        <h3> {result} </h3>
+                        <button onClick={quiz}>Go again?</button>
+                    </section>
+                </>
+            )}
         </>
-    )
+    );
 }
 
 export default ResultScreen
