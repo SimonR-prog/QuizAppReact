@@ -1,4 +1,4 @@
-import './header.css'
+import './Stylings/header.css'
 
 function Header(){
     return (

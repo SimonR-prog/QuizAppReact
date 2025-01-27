@@ -1,5 +1,5 @@
 import GetData from './questions';
-import './quiz.css';
+import './Stylings/quiz.css';
 import { useState, useEffect } from "react";
 import ResultScreen from "./result";
 
