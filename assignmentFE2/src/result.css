@@ -1,0 +1,27 @@
+@import './colors.css';
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.result-card{
+    background-color: var(--second-bg-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 8px;
+    color: var(--text-color);
+    box-shadow: var(--box-shadow-color);
+    border: var(--border-color);
+}
+.btn{
+    border-radius: 12px;
+    box-shadow: var(--box-shadow-color);
+    border: var(--border-color);
+    color: var(--text-color);
+}
