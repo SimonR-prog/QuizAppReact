@@ -1,4 +1,4 @@
-import './Stylings/App.css'
+import './Stylings/index.css'
 import { useState } from 'react';
 import QuizGame from './quiz';
 
@@ -12,9 +12,9 @@ function App() {
           <QuizGame />
         </>
       ) : (
-        <div className="start-card">
+        <div className="card">
           <h3>Click to start the game.</h3>
-          <button onClick={quiz} id="start" className="start-btn btn">Start</button>
+          <button onClick={quiz} id="start" className="btn">Start</button>
         </div>
       )}
     </>

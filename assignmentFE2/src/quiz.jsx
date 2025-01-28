@@ -1,5 +1,5 @@
 import GetData from './questions';
-import './Stylings/quiz.css';
+import './Stylings/index.css'
 import { useState, useEffect } from "react";
 import ResultScreen from "./result";
 
@@ -25,18 +25,18 @@ function QuizGame(){
     }, [color])
 
     if (data.length === 0) {
-        return <p>Fetching questions...</p>;
+        return <h3>Fetching questions...</h3>;
       }
 
     function checkAnswer(chosenAnswer) {
         if (chosenAnswer === question.answer) {
             setCorrect(correct + 1);
-            setColor("green");
+            setColor("DarkGreen");
         } else{
             setWrong(wrong + 1);
-            setColor("red");
+            setColor("DarkRed");
         }
-        if (indexId + 1 < data.length) {
+        if (indexId + 1 < 5) {
             setIndexId(indexId + 1)
         }
         else {
@@ -52,18 +52,22 @@ function QuizGame(){
                 </>
             ) : (
                 <>
-                    <section className="quiz-card">
-                        <p>{ question.question }</p>
+                    <section className="card">
                         <section className="results">
-                            <h2>Score:</h2>
-                            <ul>
-                                <li><p>Correct: {correct}</p></li>
-                                <li><p>Wrong: {wrong}</p></li>
-                            </ul>
+                            <section className="result-text">
+                                <h2>Score:</h2>
+                            </section>
+                            <section className="score">
+                                <ul className="result-list">
+                                    <li><p>Correct: {correct}</p></li>
+                                    <li><p>Wrong: {wrong}</p></li>
+                                </ul>
+                            </section>
                         </section>
+                        <p>{ question.question }</p>
                         <section className="answers">
-                        <ul className="answer-list">
-                            {question.options.map((option, indexId) => (
+                            <ul className="answer-list">
+                                {question.options.map((option, indexId) => (
                                 <li key={indexId}>
                                     <button className="btn" onClick={() => checkAnswer(option)}>{option}
                                     </button>
