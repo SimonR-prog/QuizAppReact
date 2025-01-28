@@ -1,4 +1,4 @@
-import './Stylings/footer.css'
+import './Stylings/index.css'
 
 function Footer(){
     return (

@@ -1,18 +1,21 @@
 import { useEffect, useState } from "react"
 import QuizGame from "./quiz";
-import './Stylings/result.css'
+import './Stylings/index.css'
 
 function ResultScreen({wrong, correct}) {
     const [startQuiz, setStartQuiz] = useState(false);
     function quiz(){ setStartQuiz(true);};
     const [result, setResult] = useState("");
+    const [points, setPoints] = useState("");
 
     useEffect(() => {
         if (wrong < correct) {
             setResult("Winner!");
+            setPoints(`${correct} correct answers out of 5!`)
         }
         else {
             setResult("Loser..");
+            setPoints(`You guess wrong ${wrong} times.`)
         }
     }, [wrong, correct])
     
@@ -25,9 +28,10 @@ function ResultScreen({wrong, correct}) {
                 </>
             ) : (   
                 <>
-                    <section className="result-card">
-                        <h3> {result} </h3>
-                        <button onClick={quiz}>Go again?</button>
+                    <section className="card">
+                        <h2> {result} </h2>
+                        <p>{points}</p>
+                        <button className="btn" onClick={quiz}>Go again?</button>
                     </section>
                 </>
             )}
