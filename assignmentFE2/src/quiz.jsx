@@ -9,8 +9,8 @@ function QuizGame(){
     const [correct, setCorrect] = useState(0);
     const [wrong, setWrong] = useState(0);
     const [indexId, setIndexId] = useState(0);
+    const [boxShadow, setBoxShadow] = useState("card-shadow-blue");
     const question = data[indexId];
-    const boxShadow = correct > wrong ? "card-shadow-green" : correct < wrong ? "card-shadow-red" : "card-shadow-blue";
 
     useEffect(() => {
         const getData = async () => {
@@ -27,9 +27,11 @@ function QuizGame(){
     function checkAnswer(chosenAnswer) {
         if (chosenAnswer === question.answer) {
             setCorrect(correct + 1);
+            setBoxShadow("card-shadow-green")
         } 
         else{
             setWrong(wrong + 1);
+            setBoxShadow("card-shadow-red")
         }
         if (indexId + 1 < 5) {
             setIndexId(indexId + 1)
@@ -38,8 +40,6 @@ function QuizGame(){
             setShowResultScreen(true);
         }
     };
-
-    
 
     return(
         <>
