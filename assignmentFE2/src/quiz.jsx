@@ -9,9 +9,8 @@ function QuizGame(){
     const [correct, setCorrect] = useState(0);
     const [wrong, setWrong] = useState(0);
     const [indexId, setIndexId] = useState(0);
-    const question = data[indexId]
-    const [color, setColor] = useState("")
-
+    const question = data[indexId];
+    const boxShadow = correct > wrong ? "card-shadow-green" : correct < wrong ? "card-shadow-red" : "card-shadow-blue";
 
     useEffect(() => {
         const getData = async () => {
@@ -20,21 +19,17 @@ function QuizGame(){
         };
         getData();
     }, []);
-    useEffect(() => {
-        document.body.style.backgroundColor = color
-    }, [color])
 
     if (data.length === 0) {
         return <h3>Fetching questions...</h3>;
-      }
+    }
 
     function checkAnswer(chosenAnswer) {
         if (chosenAnswer === question.answer) {
             setCorrect(correct + 1);
-            setColor("DarkGreen");
-        } else{
+        } 
+        else{
             setWrong(wrong + 1);
-            setColor("DarkRed");
         }
         if (indexId + 1 < 5) {
             setIndexId(indexId + 1)
@@ -44,6 +39,8 @@ function QuizGame(){
         }
     };
 
+    
+
     return(
         <>
             {showResultScreen ? (
@@ -52,7 +49,7 @@ function QuizGame(){
                 </>
             ) : (
                 <>
-                    <section className="card">
+                    <section className={`card ${boxShadow}`}>
                         <section className="results">
                             <section className="result-text">
                                 <h2>Score:</h2>

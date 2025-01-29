@@ -7,15 +7,28 @@
   --second-bg-color: #220430;
   --text-color: #0098db;
   --text-highlight: #2acaf1;
-  --box-shadow-color: 0 6px 8px rgba(0, 0, 0, 0.5);
+  --box-shadow-color: 0 8px 65px #2acaf1;
   --border-color: 1.5px solid black;
   --button-color: #9b2154;
+
+  --box-shadow-blue: 0 10px 90px #2acaf1;
+  --box-shadow-red: 0 10px 90px #fe3538;
+  --box-shadow-green : 0 10px 90px #00e244;
+  
+  --button-text-highlight:  
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff,
+      0 0 80px #fff,
+      0 0 120px #fff;
+
+  --background-gradient: linear-gradient(to left, #220430, #230224, #21001b, #1d0012, #000000, #000000, #000000, #000000, #1d0012, #21001b, #230224, #220430);
 }
 a {
   text-decoration: inherit;
 }
 body {
-  background-color: var(--bg-color);
+  background-image: var(--background-gradient);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,12 +54,8 @@ button {
 button:hover {
   transform: scale(1.05);
   color: var(--text-highlight);
-  text-shadow: 
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px #fff,
-    0 0 80px #fff,
-    0 0 120px #fff;          
+  text-shadow: var(--button-text-highlight);
+  box-shadow: var(--box-shadow-color);
 }
 
 /* Card; */
@@ -59,9 +68,20 @@ button:hover {
   padding-right: 5rem;
   border-radius: 8px;
   color: var(--text-color);
-  box-shadow: var(--box-shadow-color);
   border: var(--border-color);
 }
+
+/* Cardshadows depending on result */
+.card-shadow-blue{
+  box-shadow: var(--box-shadow-blue);
+}
+.card-shadow-red{
+  box-shadow: var(--box-shadow-red);
+}
+.card-shadow-green{
+  box-shadow: var(--box-shadow-green);
+}
+
 
 /* Quiz - results list; */
 .results{
@@ -86,13 +106,9 @@ li p{
   gap: 1rem;
 }
 
-
-
-
-
 /* Header; */
 .header{
-    background-image: linear-gradient(to left, #220430, #230224, #21001b, #1d0012, #000000, #000000, #000000, #000000, #1d0012, #21001b, #230224, #220430);
+    background-image: var(--background-gradient);
     position: fixed;
     width: 100%;
     top: 0;
@@ -105,12 +121,12 @@ li p{
     color: var(--text-color);
 }
 img{
-    width: 10rem;
+    height: 8rem;
 }
 
 /* Footer; */
 .footer{
-  background-image: linear-gradient(to left, #220430, #230224, #21001b, #1d0012, #000000, #000000, #000000, #000000, #1d0012, #21001b, #230224, #220430);
+  background-image: var(--background-gradient);
   position: fixed;
   display: flex;
   flex-direction: column;

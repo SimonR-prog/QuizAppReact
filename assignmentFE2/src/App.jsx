@@ -12,7 +12,7 @@ function App() {
           <QuizGame />
         </>
       ) : (
-        <div className="card">
+        <div className="card card-shadow-blue">
           <h3>Click to start the game.</h3>
           <button onClick={quiz} id="start" className="btn">Start</button>
         </div>
