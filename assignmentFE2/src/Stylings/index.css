@@ -136,7 +136,6 @@ img{
   bottom: 0;
   width: 100%;
   font-size: 1rem;
-  border-top: var(--border-color);
 }
 .footer-ulist{
   display: flex;
