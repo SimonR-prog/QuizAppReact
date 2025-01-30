@@ -1,6 +1,6 @@
 const questionJSON = '/questions.json';
 
-async function GetData() {
+export default async function GetData() {
     try {
         const response = await fetch(questionJSON);
         if (!response.ok) {
@@ -12,5 +12,4 @@ async function GetData() {
         console.error("Can't access the data.", error)
         return [];
     }
-}
-export default GetData
+};
