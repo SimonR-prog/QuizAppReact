@@ -4,10 +4,9 @@ import './Stylings/index.css'
 
 function ResultScreen({wrong, correct}) {
     const [startQuiz, setStartQuiz] = useState(false);
-    function quiz(){ setStartQuiz(true);};
     const [result, setResult] = useState("");
     const [points, setPoints] = useState("");
-    const [boxShadow, setBoxShadow] = useState("")
+    const [boxShadow, setBoxShadow] = useState("");
 
     useEffect(() => {
         if (wrong < correct) {
@@ -21,7 +20,10 @@ function ResultScreen({wrong, correct}) {
             setBoxShadow("card-shadow-red")
         }
     }, [wrong, correct])
-    
+
+    function quiz(){ 
+        setStartQuiz(true);
+    };
 
     return (
         <>
