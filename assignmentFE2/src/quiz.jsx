@@ -61,16 +61,18 @@ function QuizGame(){
                                 </ul>
                             </section>
                         </section>
-                        <p>{ question.question }</p>
-                        <section className="answers">
-                            <ul className="answer-list">
-                                {question.options.map((option, indexId) => (
-                                <li key={indexId}>
-                                    <button className="btn" onClick={() => checkAnswer(option)}>{option}
-                                    </button>
-                                </li>
-                                ))}
-                            </ul>
+                        <section className="answer-section">
+                            <p className="question-p">{ question.question }</p>
+                            <section className="answers">
+                                <ul className="answer-list">
+                                    {question.options.map((option, indexId) => (
+                                    <li key={indexId}>
+                                        <button className="btn" onClick={() => checkAnswer(option)}>{option}
+                                        </button>
+                                    </li>
+                                    ))}
+                                </ul>
+                            </section>
                         </section>
                     </section>
                 </>

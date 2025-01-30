@@ -71,6 +71,18 @@ button:hover {
   color: var(--text-color);
   border: var(--border-color);
 }
+.answer-section{
+  display: center;
+  justify-content: center;
+  align-items: center;
+}
+.answers{
+  display: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* Cardshadows depending on result */
 .card-shadow-blue{
@@ -101,6 +113,7 @@ li p{
 }
 .answer-list{
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
   margin: 1rem;
