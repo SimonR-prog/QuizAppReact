@@ -39,6 +39,7 @@ h3 {
   color: var(--text-highlight);
   font-weight: 700;
 }
+
 /* Button; */
 button {
   background-color: var(--button-color);
@@ -82,8 +83,6 @@ button:hover {
   align-items: center;
 }
 
-
-
 /* Cardshadows depending on result */
 .card-shadow-blue{
   box-shadow: var(--box-shadow-blue);
@@ -94,7 +93,6 @@ button:hover {
 .card-shadow-green{
   box-shadow: var(--box-shadow-green);
 }
-
 
 /* Quiz - results list; */
 .results{
