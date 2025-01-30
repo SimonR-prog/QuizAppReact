@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import QuizGame from "./quiz";
 import './Stylings/index.css'
 
-function ResultScreen({wrong, correct}) {
+export default function ResultScreen({wrong, correct}) {
     const [startQuiz, setStartQuiz] = useState(false);
     const [result, setResult] = useState("");
     const [points, setPoints] = useState("");
@@ -21,10 +21,6 @@ function ResultScreen({wrong, correct}) {
         }
     }, [wrong, correct])
 
-    function quiz(){ 
-        setStartQuiz(true);
-    };
-
     return (
         <>
             {startQuiz ? (
@@ -36,12 +32,10 @@ function ResultScreen({wrong, correct}) {
                     <section className={`card ${boxShadow}`}>
                         <h2> {result} </h2>
                         <p>{points}</p>
-                        <button className="btn" onClick={quiz}>Go again?</button>
+                        <button onClick={() => setStartQuiz(true)}>Go again?</button>
                     </section>
                 </>
             )}
         </>
     );
-}
-
-export default ResultScreen
+};
