@@ -21,10 +21,6 @@ function ResultScreen({wrong, correct}) {
         }
     }, [wrong, correct])
 
-    function quiz(){ 
-        setStartQuiz(true);
-    };
-
     return (
         <>
             {startQuiz ? (
@@ -36,7 +32,7 @@ function ResultScreen({wrong, correct}) {
                     <section className={`card ${boxShadow}`}>
                         <h2> {result} </h2>
                         <p>{points}</p>
-                        <button className="btn" onClick={quiz}>Go again?</button>
+                        <button onClick={() => setStartQuiz(true)}>Go again?</button>
                     </section>
                 </>
             )}
