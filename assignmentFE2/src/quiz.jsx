@@ -65,9 +65,9 @@ function QuizGame(){
                             <p className="question-p">{ question.question }</p>
                             <section className="answers">
                                 <ul className="answer-list">
-                                    {question.options.map((option, indexId) => (
-                                    <li key={indexId}>
-                                        <button className="btn" onClick={() => checkAnswer(option)}>{option}
+                                    {question.options.map((option, Id) => (
+                                    <li key={Id}>
+                                        <button onClick={() => checkAnswer(option)}>{option}
                                         </button>
                                     </li>
                                     ))}
