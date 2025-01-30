@@ -1,3 +1,6 @@
+Work in progress....
+
+
 # Assignment from frontend 2 at Nackademin.
 ## Description: 
 We have been tasked with creating a **quiz web app** in react that contains atleast five questions. 
@@ -33,10 +36,6 @@ JSON for storing the questions.
 
 # Sources:
 Most of the questions are from: https://www.mentimeter.com/blog/meetings/quiz-questions
-
-Learning to generate random numbers: https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/generate-random-whole-numbers-within-a-range
-
-Used for testing the random number generator code: https://pythontutor.com/render.html#mode=display
 
 Learning to add images: https://www.youtube.com/watch?v=taMJct5oeoI
 
