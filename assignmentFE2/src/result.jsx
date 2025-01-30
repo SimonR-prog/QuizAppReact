@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import QuizGame from "./quiz";
 import './Stylings/index.css'
 
-function ResultScreen({wrong, correct}) {
+export default function ResultScreen({wrong, correct}) {
     const [startQuiz, setStartQuiz] = useState(false);
     const [result, setResult] = useState("");
     const [points, setPoints] = useState("");
@@ -38,6 +38,4 @@ function ResultScreen({wrong, correct}) {
             )}
         </>
     );
-}
-
-export default ResultScreen
+};

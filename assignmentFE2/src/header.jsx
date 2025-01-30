@@ -1,7 +1,7 @@
 import './Stylings/index.css'
 
 
-function Header(){
+export default function Header(){
     return (
     <>
         <header className="header">
@@ -9,5 +9,4 @@ function Header(){
         </header>
     </>
     )
-}
-export default Header
+};

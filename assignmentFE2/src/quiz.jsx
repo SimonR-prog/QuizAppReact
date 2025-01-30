@@ -3,7 +3,7 @@ import './Stylings/index.css'
 import { useState, useEffect } from "react";
 import ResultScreen from "./result";
 
-function QuizGame(){
+export default function QuizGame(){
     const [data, setData] = useState([]);
     const [showResultScreen, setShowResultScreen] = useState(false);
     const [correct, setCorrect] = useState(0);
@@ -79,5 +79,4 @@ function QuizGame(){
             )}
         </>
     );
-}
-export default QuizGame
+};

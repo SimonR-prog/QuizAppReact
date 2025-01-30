@@ -2,7 +2,7 @@ import './Stylings/index.css'
 import { useState } from 'react';
 import QuizGame from './quiz';
 
-function App() {
+export default function App() {
   const [startQuiz, setStartQuiz] = useState(false);
 
   return (
@@ -19,5 +19,4 @@ function App() {
       )}
     </>
   );
-}
-export default App
+};
