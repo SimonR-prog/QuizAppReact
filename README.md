@@ -41,6 +41,22 @@ Learning to add images: https://www.youtube.com/watch?v=taMJct5oeoI
 
 Generated the neon quiz image for the header: https://deepai.org/machine-learning-model/text2img
 
+Learning about fetching (Bro code): https://www.youtube.com/watch?v=37vxWr0WgQk
+
+Learning about react in general (Net Ninja): https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=1
+
+Learning about mapping (Net Ninja): https://www.youtube.com/watch?v=tHjxSVaj_wY&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&index=12
+
+More about mapping (bonsaiilabs) : https://www.youtube.com/watch?v=_kVJnN2e4tw
+
+UseState: https://react-hooks-cheatsheet.com/usestate
+
+UseEffect: https://react-hooks-cheatsheet.com/useeffect
+
+Getting colorscheme: https://mycolor.space/
+
+Colorpicker: https://imagecolorpicker.com/
+
 
 
 # Contact: 
