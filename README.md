@@ -34,6 +34,27 @@ JSON for storing the questions.
 
 
 
+
+
+
+
+
+## Styling:
+
+Decided, after trying to generate an image for the header and only getting these fucking neon signs, to go with a neon theme for my styling. 
+I put the image into the colorpicker and used mycolor to combine some colors to get a linear-gradient that made the image fit into the header.
+
+![Quiz header image](https://github.com/user-attachments/assets/a4db268f-426d-480e-9f80-b2da9b2dc3a7|width=100)
+
+![color picker quiz image](https://github.com/user-attachments/assets/115d707b-08b1-4676-9030-151e90c11b56|width=50)
+
+
+I added a blue glow for the background of the questions-card and then used that same glow to indicate a correct or wrong answer from the user by changing the color when the user picks.
+
+![glow blue](https://github.com/user-attachments/assets/7af5ec1e-714a-46f3-bd39-a623233eb2f0|width=50)
+
+![glow red](https://github.com/user-attachments/assets/3c13232a-2fac-41e8-8a68-570ec340d654|width=50)
+
 # Sources:
 Most of the questions are from: https://www.mentimeter.com/blog/meetings/quiz-questions
 
