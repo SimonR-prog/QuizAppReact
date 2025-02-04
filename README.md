@@ -1,5 +1,6 @@
 Work in progress....
 
+<img src="" alt="" style="width:50%; height:auto;">  </img>
 
 # Assignment from frontend 2 at Nackademin.
 ## Description: 
@@ -25,9 +26,13 @@ JSON for storing the questions.
 4. Add the ability to replay the quiz and/or show the correct answer after each question.
 5. Responsive design so that the web app works on any platform.
 
+## Initial thought..
 
+Was to make a longer json-file than the five questions required and then make a random number generator that would create an array of five indexes that I could use to extract the questions from the json-array to create some replay value.  
 
+<img src="https://github.com/user-attachments/assets/d6eb7db1-e9c7-42dd-8c2a-73db73a88572" alt="Image of the random number generator I made" style="width:50%; height:auto;">  </img>
 
+After having added it and tested I ran into to many problems with things that I couldn't figure out in time. So im going to utilize this later on for some other project instead or if I decided to try and make a new quiz but in JS only instead of with react. 
 
 
 # Parts of the code:
@@ -42,6 +47,7 @@ JSON for storing the questions.
 ## Styling:
 
 Decided, after trying to generate an image for the header and only getting these fucking neon signs, to go with a neon theme for my styling. 
+
 I put the image into the colorpicker and used mycolor to combine some colors to get a linear-gradient that made the image fit into the header.
 
 <img src="https://github.com/user-attachments/assets/a4db268f-426d-480e-9f80-b2da9b2dc3a7" alt="Quiz header image" style="width:50%; height:auto;">  </img>
