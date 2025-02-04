@@ -34,14 +34,10 @@ Was to make a longer json-file than the five questions required and then make a 
 
 After having added it and tested I ran into to many problems with things that I couldn't figure out in time. So im going to utilize this later on for some other project instead or if I decided to try and make a new quiz but in JS only instead of with react. 
 
-
 # Parts of the code:
+To fit the criteria of keeping it as a SPA (single page application) I decided to simply make a header, footer and have three components for the middle that will change depending on which stage we're in.
 
-
-
-
-
-
+<img src="https://github.com/user-attachments/assets/a11e59c3-b0de-4d31-8534-d2e6571e37d8" alt="Image showing the structure in the main.jsx file" style="width:50%; height:auto;">  </img>
 
 
 ## Styling:
