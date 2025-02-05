@@ -39,6 +39,16 @@ To fit the criteria of keeping it as a SPA (single page application) I decided t
 
 <img src="https://github.com/user-attachments/assets/a11e59c3-b0de-4d31-8534-d2e6571e37d8" alt="Image showing the structure in the main.jsx file" style="width:50%; height:auto;">  </img>
 
+Then when it came to actually changing component I used useStates to shift between then different stages of the game.
+
+<img src="https://github.com/user-attachments/assets/84930373-f028-46d6-acf2-713f2a84388c" alt="Image of the structure of the app.jsx file." style="width:50%; height:auto;">  </img>
+
+So in the example above we have an initial state for startQuiz set as false which will lead us to the lower div with the className "card". 
+
+when we click the button it's using an onClick pointer function to change the state to true which then puts us i nthe first div where QuizGame exists and the center component of the site changes.
+
+
+
 
 ## Styling:
 
