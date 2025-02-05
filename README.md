@@ -65,23 +65,27 @@ The file with the questions are kept in a simple json-structure.
 
 ### Fetching the questions:
 
-<img src="" alt="" style="width:40%; height:auto;">  </img>
-<img src="" alt="" style="width:40%; height:auto;">  </img>
+<img src="https://github.com/user-attachments/assets/2668d117-1ef7-4a2f-a6a7-b96e63f2f545" alt="" style="width:40%; height:auto;">  </img>
 
+incoming text
+
+<img src="https://github.com/user-attachments/assets/5d5dba82-b306-4cf9-8293-7eaac4b467e1" alt="" style="width:40%; height:auto;">  </img>
 
 
 #### Pausing while fetching:
 
-<img src="" alt="" style="width:40%; height:auto;">  </img>
-
-
+<img src="https://github.com/user-attachments/assets/f8fb2c79-2f10-4b50-ad32-b700e3c273a6" alt="" style="width:40%; height:auto;">  </img>
 
 
 ### QuizGame:
 #### Setting up:
 
+incoming text
 
-<img src="" alt="" style="width:40%; height:auto;">  </img>
+<img src="https://github.com/user-attachments/assets/9d265735-c30e-44c0-bcb5-f7f47dfec5d9" alt="" style="width:40%; height:auto;">  </img>
+
+incoming text
+
 <img src="" alt="" style="width:40%; height:auto;">  </img>
 <img src="" alt="" style="width:40%; height:auto;">  </img>
 
