@@ -34,18 +34,36 @@ Was to make a longer json-file than the five questions required and then make a 
 
 After having added it and tested I ran into to many problems with things that I couldn't figure out in time. So im going to utilize this later on for some other project instead or if I decided to try and make a new quiz but in JS only instead of with react. 
 
-# Parts of the code:
-To fit the criteria of keeping it as a SPA (single page application) I decided to simply make a header, footer and have three components for the middle that will change depending on which stage we're in.
+# Code:
+
+### Header and Footer: 
+<img src="https://github.com/user-attachments/assets/7d289309-07e3-4426-b732-635e1a30a59f" alt="Image showing the code for both the header and footer." style="width:50%; height:auto;">  </img>
+
+I kept both the header and footer simple. The game is not about them. Since it's a SPA we don't need a bunch of links to different pages on the site. I could have skipped them but added them anyways. The footer just containing a list of anchor-links to my linkedIn and github.
+
+### Changing the component, SPA(Single page application):
+
+To fit the criteria of keeping it as a SPA I decided to simply make a header, footer and have three components for the middle that will change depending on which stage the user is on.
 
 <img src="https://github.com/user-attachments/assets/a11e59c3-b0de-4d31-8534-d2e6571e37d8" alt="Image showing the structure in the main.jsx file" style="width:50%; height:auto;">  </img>
 
-Then when it came to actually changing component I used useStates to shift between then different stages of the game.
+Then when it came to actually changing component I used useStates to shift between the different stages of the game.
 
 <img src="https://github.com/user-attachments/assets/84930373-f028-46d6-acf2-713f2a84388c" alt="Image of the structure of the app.jsx file." style="width:50%; height:auto;">  </img>
 
 So in the example above we have an initial state for startQuiz set as false which will lead us to the lower div with the className "card". 
 
-when we click the button it's using an onClick pointer function to change the state to true which then puts us i nthe first div where QuizGame exists and the center component of the site changes.
+When the user clicks the button the state changes to true using a pointer function which moves the user to the first div where QuizGame exists and the center component of the site changes.
+
+### JSON-File:
+
+The file with the questions are kept in a simple json-structure.
+
+<img src="https://github.com/user-attachments/assets/5bb066f2-99b0-493e-bf1f-d7a166e93676" alt="Images showing the structure of the json-file." style="width:50%; height:auto;">  </img>
+
+
+
+
 
 
 
