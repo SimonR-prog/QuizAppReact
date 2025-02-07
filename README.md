@@ -118,7 +118,7 @@ And, again, the box-shadow except here it is set as an empty string as it will b
 
 <img src="https://github.com/user-attachments/assets/faa000de-900a-435d-8b83-7442026701e1" alt="" style="width:40%; height:auto;">  </img>
 
-Above you can see the structure of the components HTML part. Depending on which result the quiz sends to the result screen, the message will change. 
+Above you can see the structure of the components HTML part. Depending on which result the quiz sends to the result screen, the message will change. Then the user has the option to restart the quiz if they click on the button, which same as in the first component has a pointer function which changes the useState of the startQuiz to true. 
 
 
 ## Styling:
@@ -137,6 +137,10 @@ I added a blue glow for the background of the questions-card and then used that 
 
 <img src="https://github.com/user-attachments/assets/3c13232a-2fac-41e8-8a68-570ec340d654" alt="Red glow" style="width:40%; height:auto;">  </img>
 
+
+# If I ever make it again:
+
+If I remake this project, then I would probably make separate json-files for questions. Add maybe five, or more, questions to each and then pull a number at random to add to the end of the filepath in the fetching file to get a random list of questions for the user. 
 
 # Sources:
 Most of the questions are from: https://www.mentimeter.com/blog/meetings/quiz-questions
@@ -160,6 +164,7 @@ UseEffect: https://react-hooks-cheatsheet.com/useeffect
 Getting colorscheme: https://mycolor.space/
 
 Colorpicker: https://imagecolorpicker.com/
+
 
 
 
