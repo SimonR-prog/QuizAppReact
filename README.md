@@ -118,7 +118,7 @@ And, again, the box-shadow except here it is set as an empty string as it will b
 
 <img src="https://github.com/user-attachments/assets/faa000de-900a-435d-8b83-7442026701e1" alt="" style="width:40%; height:auto;">  </img>
 
-incoming text
+Above you can see the structure of the components HTML part. Depending on which result the quiz sends to the result screen, the message will change. 
 
 
 ## Styling:
