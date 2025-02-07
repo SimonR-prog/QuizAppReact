@@ -73,13 +73,16 @@ If the data is fetched successfully it will then be parsed and returned.
 
 <img src="https://github.com/user-attachments/assets/5d5dba82-b306-4cf9-8293-7eaac4b467e1" alt="Image showing of the useEffect that sends for the json data" style="width:40%; height:auto;">  </img>
 
+Then in the quiz file itself I have the useEffect which will fetch the data from the GetData function, when the component mounts, and update the setData with the data that is returned. Again, using async await for the same reasons as above.
 
+Im using a empty dependency array in the end of it to make sure it only runs once. 
 
 
 #### Pausing while fetching:
 
 <img src="https://github.com/user-attachments/assets/f8fb2c79-2f10-4b50-ad32-b700e3c273a6" alt="" style="width:40%; height:auto;">  </img>
 
+While the fetch is happening, the website will show this message. It only takes a second or so. 
 
 ### QuizGame:
 #### Setting up:
