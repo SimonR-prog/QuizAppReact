@@ -102,6 +102,14 @@ Then using the indexId from earlier to load the first question into the question
 
 --More coming--
 
+<img src="https://github.com/user-attachments/assets/953a15f8-6075-4efc-98d7-af58057444f4" alt="Image showing the function which checks if the user picked the correct answer" style="width:40%; height:auto;">  </img>
+<img src="https://github.com/user-attachments/assets/94b2c725-cee5-4f5e-8cca-98fc622dd3d4" alt="Image showing the html of the quiz" style="width:40%; height:auto;">  </img>
+
+
+
+<img src="https://github.com/user-attachments/assets/9cbed79b-8a56-42a9-b1cb-ceb19f32e7e5" alt="Image showing when the quiz sends data to the result screen" style="width:40%; height:auto;">  </img>
+
+When the quiz is over and the question index has gotten to the set number above, the user, along with the wrong and correct constants, get sent over to the result screen component.
 
 
 ### Resultscreen:
