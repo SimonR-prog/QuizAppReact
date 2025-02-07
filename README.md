@@ -103,7 +103,13 @@ Then using the indexId from earlier to load the first question into the question
 
 <img src="https://github.com/user-attachments/assets/6eaf2d7a-05ec-481e-981c-22db777647a4" alt="" style="width:40%; height:auto;">  </img>
 
-incoming text
+Above you see the start of the resultscreen component. I import the quizgame and set it as false to be able to later on send the user back to the quiz if they choose. I import useEffect and useState to be used and the styling from the CSS file that is in the stylings folder. 
+
+After that it shows that the ResultScreen wants the wrong and correct constants from the quiz which we will use below to check the result of the game and generate a message depending in the useEffect. 
+
+And, again, the box-shadow except here it is set as an empty string as it will be set in the useEffect depending on which one of the correct/wrong has the most points.
+
+
 
 <img src="https://github.com/user-attachments/assets/faa000de-900a-435d-8b83-7442026701e1" alt="" style="width:40%; height:auto;">  </img>
 
