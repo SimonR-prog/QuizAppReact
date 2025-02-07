@@ -59,17 +59,21 @@ When the user clicks the button the state changes to true using a pointer functi
 
 The file with the questions are kept in a simple json-structure.
 
-<img src="https://github.com/user-attachments/assets/5bb066f2-99b0-493e-bf1f-d7a166e93676" alt="Images showing the structure of the json-file." style="width:40%; height:auto;">  </img>
-
-
+<img src="https://github.com/user-attachments/assets/5bb066f2-99b0-493e-bf1f-d7a166e93676" alt="Image showing the structure of the json-file." style="width:40%; height:auto;">  </img>
 
 ### Fetching the questions:
 
-<img src="https://github.com/user-attachments/assets/2668d117-1ef7-4a2f-a6a7-b96e63f2f545" alt="" style="width:40%; height:auto;">  </img>
+<img src="https://github.com/user-attachments/assets/2668d117-1ef7-4a2f-a6a7-b96e63f2f545" alt="Image showing the GetData function which fetches the json data" style="width:40%; height:auto;">  </img>
 
-incoming text
+So, first I declare a constant with the filepath to the json-file in the public folder. Then I have a simple async function called GetData which is fetching the json-data, from the filepath, within a try catch. It is made async to be able to use await so that the loading of the rest of the program isn't slowed down from the fetching.
 
-<img src="https://github.com/user-attachments/assets/5d5dba82-b306-4cf9-8293-7eaac4b467e1" alt="" style="width:40%; height:auto;">  </img>
+If it encounters any problems, like the file not existing or some other error, it throws an error that will be caught by the catch which will console log the error and then send back an empty array. 
+
+If the data is fetched successfully it will then be parsed and returned.
+
+<img src="https://github.com/user-attachments/assets/5d5dba82-b306-4cf9-8293-7eaac4b467e1" alt="Image showing of the useEffect that sends for the json data" style="width:40%; height:auto;">  </img>
+
+
 
 
 #### Pausing while fetching:
