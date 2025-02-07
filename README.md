@@ -99,6 +99,11 @@ The box-shadow for the card is being set to the blue version which will be chang
 
 Then using the indexId from earlier to load the first question into the question constant. 
 
+
+--More coming--
+
+
+
 ### Resultscreen:
 
 <img src="https://github.com/user-attachments/assets/6eaf2d7a-05ec-481e-981c-22db777647a4" alt="" style="width:40%; height:auto;">  </img>
