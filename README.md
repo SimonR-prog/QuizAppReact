@@ -87,16 +87,17 @@ While the fetch is happening, the website will show this message. It only takes 
 ### QuizGame:
 #### Setting up:
 
-incoming text
+<img src="https://github.com/user-attachments/assets/9d265735-c30e-44c0-bcb5-f7f47dfec5d9" alt="Image showing the start of the quiz, where a bunch of states are being set." style="width:40%; height:auto;">  </img>
 
-<img src="https://github.com/user-attachments/assets/9d265735-c30e-44c0-bcb5-f7f47dfec5d9" alt="" style="width:40%; height:auto;">  </img>
+The above image is showing the start of the QuizGame component. 
 
-incoming text
+Here I am setting the data to an empty array, setting showResultScreen as false just like the startQuiz before. 
 
-<img src="" alt="" style="width:40%; height:auto;">  </img>
-<img src="" alt="" style="width:40%; height:auto;">  </img>
+I have two constants, correct and wrong, for the score keeping. Setting an indexId which will be used later to iterate through the array of the json-data to bring in a question at a time. 
 
+The box-shadow for the card is being set to the blue version which will be changed later on depending on the result of the choice of the user.
 
+Then using the indexId from earlier to load the first question into the question constant. 
 
 ### Resultscreen:
 
